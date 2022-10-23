@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+   height:  100vh;
+    background: rgb(255, 252, 0);
+
+    font-size: 16px;
+
+}
+
+.contain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    width: 80%;
+    height: 100vh;
+   margin-left:10% ;
+
+}
+
+.main-tittle {
+    font-size: 10rem;
+    color: rgb(24, 45, 64);
+}
+.contain-title{
+   
+    
+    text-align: center;
+}
+.city {
+   
+    font-size: 2rem;
+    color: rgb(51, 149, 172);
+
+}
+
+table {
+    margin: 20px;
+
+
+
+
+}
+
+
+td {
+    color: rgb(24, 45, 64);
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+th {
+    font-size: 1.5rem;
+    color: rgb(49, 39, 58);
+    padding: 10px;
+}
+
+.city-btn {
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding: 1.5rem;
+    margin: 1rem;
+    color: rgb(103, 205, 205);
+    border: none;
+    background-color: rgb(36, 32, 32);
+    letter-spacing: 0.5rem;
+
+    opacity: 0.7;
+}
+
+.city-btn:hover {
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+
+}
+
+/* *********media querries pour format reduit************/
+
+
+@media screen and (max-height:480px) {
+    .contain{
+        margin-top: 5px;
+        height: 100vh;
+        font-size: 0.9rem;
+        
+    }
+    .main-tittle{
+        font-size: 4rem;
+        margin-top: 5%;
+    }
+    .city{
+        font-size: 1.5rem;
+    }
+    .city-btn{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:1060px){
+
+    .contain{
+        margin: 0;
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:592px) {
+    .contain{
+       
+        height: 100vh;
+        font-size: 0.9rem;
+       
+    }
+    .main-tittle{
+        font-size: 4rem;
+        
+    }
+    table,td,th{
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    .city-btn{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+}

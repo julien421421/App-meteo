@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Météo App</title>
+</head>
+
+<body>
+
+
+    <div class="contain">
+        <div class="contain-title">
+            <h1 class="main-tittle">Météo</h1>
+            <span class="city"></span> <!--Ville transmis par le scipt-->
+        </div>
+        <div class="contain-tab">
+            <table class="info-tab">
+                <thead>
+
+                    <tr class="info-tab-title">
+                        <th>Temperature</th> 
+                        <th>Temperature ressentie</th>
+                        <th>Vent</th> 
+                        <th>Ciel</th>
+                    </tr>
+                </thead>
+                <tbody class="info-tab-value"> <!-- Information meteo tranmispar le script-->
+                    <td class="temp"></td>
+                    <td class="feeltemp"></td>
+                    <td class="wind"></td>
+                    <td class="weather"></td>
+
+                </tbody>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <button class="city-btn">Choisir sa Ville</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Appel du script -->
+</body>
+
+</html>
